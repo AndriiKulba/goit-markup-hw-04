@@ -128,7 +128,7 @@ body {
 
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 1428;
+  line-height: 1.1428;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
@@ -153,10 +153,24 @@ body {
 .link-navi:hover,
 .link-navi:focus,
 .contacts-link:hover,
-.contacts-link:focus,
-.link-navi.current {
+.contacts-link:focus {
   color: var(--weblog-btn-link);
   fill: var(--weblog-btn-link);
+}
+
+.current {
+  color: var(--weblog-btn-link);
+  position: relative;
+}
+
+.current-line {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0px;
+  left: 0px;
+  background: var(--weblog-btn-link);
+  border-radius: 2px;
 }
 
 /* Hero */
@@ -187,7 +201,7 @@ body {
 
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 3636;
+  line-height: 1.3636;
   letter-spacing: 0.06em;
   color: var(--logo-bgr-color);
   text-align: center;
@@ -202,7 +216,7 @@ body {
 
   font-weight: bold;
   font-size: 16px;
-  line-height: 1, 875x;
+  line-height: 1.875x;
 
   letter-spacing: 0.06em;
   color: var(--logo-bgr-color);
@@ -291,7 +305,7 @@ body {
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
-  line-height: 1, 6667;
+  line-height: 1.6667;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
@@ -301,6 +315,7 @@ body {
 }
 
 .box-flexcont .box-element {
+  position: relative;
   width: calc((100%-60px) / 3);
   margin-right: 30px;
 }
@@ -309,12 +324,22 @@ body {
 }
 
 .box {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1, 428;
+  line-height: 1.1428;
   letter-spacing: 0.03em;
   color: var(--logo-bgr-color);
   background: var(--bgr-box);
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Наша команда */
@@ -344,7 +369,7 @@ body {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 875;
+  line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
@@ -420,7 +445,7 @@ body {
 .filter {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 625;
+  line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
@@ -495,7 +520,7 @@ body {
   margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-color);
 }
@@ -504,7 +529,7 @@ body {
   width: 322px;
   margin-bottom: 20px;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -524,9 +549,14 @@ body {
 
 .footer-flex {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: flex-end;
 }
+
+.footer-flex .footflex-elem:not(:first-child) {
+  margin-top: 12px;
+}
+
 .footer-flex .footflex-elem:last-child {
   margin-left: 94px;
 }
@@ -546,7 +576,7 @@ body {
 .footer-contacts,
 .mail-btn {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7143;
   letter-spacing: 0.03em;
   color: var(--logo-bgr-color);
 }
@@ -560,6 +590,12 @@ body {
 }
 
 .footflex-elem h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+  color: var(--logo-bgr-color);
+  background: var(--bgr-box);
   text-transform: uppercase;
 }
 
