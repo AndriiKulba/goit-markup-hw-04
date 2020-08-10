@@ -404,11 +404,12 @@ body {
   border: none;
   border-radius: 50%;
   background-color: var(--logo-bgr-color) 10%;
+  
 }
 
 .soc-link:hover {
   background-color: var(--weblog-btn-link);
-  --color4: var(--logo-bgr-color);
+  --color4: var(--weblog-btn-link);
 }
 
 /* Клиенты */
