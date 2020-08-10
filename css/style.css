@@ -409,7 +409,7 @@ body {
 
 .soc-link:hover {
   background-color: var(--weblog-btn-link);
-  --color4: var(--weblog-btn-link);
+  --color4: var(--logo-bgr-color);
 }
 
 /* Клиенты */
@@ -636,6 +636,7 @@ body {
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  --color4: var(--logo-bgr-color)
 }
 
 .footsoc-block a:not(:last-child) {
